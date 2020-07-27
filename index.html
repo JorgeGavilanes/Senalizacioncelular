@@ -54,9 +54,9 @@
                         <li>c. Neurotransmisores</li>
                     </ul>
                     <div class="botonAnswer">
-                    <button class="btnC" onclick="correct()">a</button>
-                        <button class="btnI" onclick="incorrect()">b</button>
-                        <button class="btnI" onclick="incorrect()">c</button>
+                    <button class="btnC" onclick='setTimeout("correct1()", 150)'>a</button>
+                        <button class="btnI" onclick='setTimeout("incorrect1()", 150)'>b</button>
+                        <button class="btnI" onclick='setTimeout("incorrect1()", 150)'>c</button>
                     </div>
                 </div>
             </div>
@@ -73,9 +73,9 @@
                         <li>c. Parácrina</li>
                     </ul>
                     <div class="botonAnswer">
-                    <button class="btnI" onclick="incorrect()">a</button>
-                        <button class="btnI" onclick="incorrect()">b</button>
-                        <button class="btnC" onclick="correct()">c</button>
+                    <button class="btnI" onclick='setTimeout("incorrect2()", 150)'>a</button>
+                        <button class="btnI" onclick='setTimeout("incorrect2()", 150)'>b</button>
+                        <button class="btnC" onclick='setTimeout("correct2()", 150)'>c</button>
                     </div>
                 </div>
             </div>
@@ -92,9 +92,9 @@
                         <li>c. Mecanismo de enzimas activadoras</li>
                     </ul>
                     <div class="botonAnswer">
-                    <button class="btnI" onclick="incorrect()">a</button>
-                        <button class="btnC" onclick="correct()">b</button>
-                        <button class="btnI" onclick="incorrect()">c</button>
+                    <button class="btnI" onclick='setTimeout("incorrect3()", 150)'>a</button>
+                        <button class="btnC" onclick="correct3()">b</button>
+                        <button class="btnI" onclick='setTimeout("incorrect3()", 150)'>c</button>
                     </div>
                 </div>
             </div>
@@ -111,9 +111,9 @@
                         <li>c. Núcleo y aparato de Golgi</li>
                     </ul>
                     <div class="botonAnswer">
-                    <button class="btnC" onclick="correct()">a</button>
-                        <button class="btnI" onclick="incorrect()">b</button>
-                        <button class="btnI" onclick="incorrect()">c</button>
+                    <button class="btnC" onclick="correct4()">a</button>
+                        <button class="btnI" onclick="incorrect4()">b</button>
+                        <button class="btnI" onclick="incorrect4()">c</button>
                     </div>
                 </div>
             </div>
@@ -130,9 +130,9 @@
                         <li>c. Sistema nervioso y endócrino</li>
                     </ul>
                     <div class="botonAnswer">
-                    <button class="btnI" onclick="incorrect()">a</button>
-                        <button class="btnI" onclick="incorrect()">b</button>
-                        <button class="btnC" onclick="correct()">c</button>
+                    <button class="btnI" onclick="incorrect5()">a</button>
+                        <button class="btnI" onclick="incorrect5()">b</button>
+                        <button class="btnC" onclick="correct5()">c</button>
                     </div>
                 </div>
             </div>
@@ -149,9 +149,9 @@
                         <li>c. Toxinas</li>
                     </ul>
                     <div class="botonAnswer">
-                    <button class="btnC" onclick="correct()">a</button>
-                        <button class="btnI" onclick="incorrect()">b</button>
-                        <button class="btnI" onclick="incorrect()">c</button>
+                    <button class="btnC" onclick="correct6()">a</button>
+                        <button class="btnI" onclick="incorrect6()">b</button>
+                        <button class="btnI" onclick="incorrect6()">c</button>
                     </div>
                 </div>
             </div>
@@ -168,9 +168,9 @@
                         <li>c. Endócrina</li>
                     </ul>
                     <div class="botonAnswer">
-                    <button class="btnI" onclick="incorrect()">a</button>
-                        <button class="btnI" onclick="incorrect()">b</button>
-                        <button class="btnC" onclick="correct()">c</button>
+                    <button class="btnI" onclick="incorrect7()">a</button>
+                        <button class="btnI" onclick="incorrect7()">b</button>
+                        <button class="btnC" onclick="correct7()">c</button>
                     </div>
                 </div>
             </div>
@@ -187,9 +187,9 @@
                         <li>c. Reconocimiento y transducción de un estímulo</li>
                     </ul>
                     <div class="botonAnswer">
-                    <button class="btnI" onclick="incorrect()">a</button>
-                        <button class="btnI" onclick="incorrect()">b</button>
-                        <button class="btnC" onclick="correct()">c</button>
+                    <button class="btnI" onclick="incorrect8()">a</button>
+                        <button class="btnI" onclick="incorrect8()">b</button>
+                        <button class="btnC" onclick="correct8()">c</button>
                     </div>
                 </div>
             </div>
@@ -206,9 +206,9 @@
                         <li>c. Tipo de comunicación que realizan las células</li>
                     </ul>
                     <div class="botonAnswer">
-                    <button class="btnC" onclick="correct()">a</button>
-                        <button class="btnI" onclick="incorrect()">b</button>
-                        <button class="btnI" onclick="incorrect()">c</button>
+                    <button class="btnC" onclick="correct9()">a</button>
+                        <button class="btnI" onclick="incorrect9()">b</button>
+                        <button class="btnI" onclick="incorrect9()">c</button>
                     </div>
                 </div>
             </div>
@@ -225,19 +225,18 @@
                         <li>c. Señalización por linfocitos alfa</li>
                     </ul>
                     <div class="botonAnswer">
-                    <button class="btnI" onclick="incorrect()">a</button>
-                        <button class="btnC" onclick="correct()">b</button>
-                        <button class="btnI" onclick="incorrect()">c</button>
+                    <button class="btnI" onclick="incorrect10()">a</button>
+                        <button class="btnC" onclick="correct10()">b</button>
+                        <button class="btnI" onclick="incorrect10()">c</button>
                     </div>
                 </div>
-                <div class="botonEnd"><button onclick="btnEnd()">Finalizar</button></div>
             </div>
-            <div class="endWinner">
+            <div class="endWinner" id="dceW">
             <h1>Felicidades, han ganado!!</h1>
                 <img src="media/win.svg">
                 <p>Obtuvieron una calificación final de <span></span></p>
             </div>
-            <div class="endLoser">
+            <div class="endLoser" id="dceL">
             <h1>Estudia, por tu culpa perdieron</h1>
                 <img src="media/dead.svg">
                 <p>Obtuvieron una calificación final de <span></span></p>
