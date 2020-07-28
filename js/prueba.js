@@ -127,7 +127,6 @@ function incorrect9(){
 function correct10(){
     document.getElementById("iH10").src="media/happy.svg";
     x += 1;
-    return x;
     if(x>7){
         document.getElementById("10").style.display="none";
         document.getElementById("dceW").style.display="block";
