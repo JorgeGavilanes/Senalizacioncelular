@@ -177,6 +177,12 @@ VENTANA QUIZ
     display: block;
     padding: 35px;
 }
+.toLeft{
+    width: 25%;
+}
+.toRight{
+    width: 75%;
+}
 .toLeft img{
     width: 150px;
     margin: 10px auto;
