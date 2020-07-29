@@ -127,7 +127,7 @@ function incorrect9(){
 function correct10(){
     document.getElementById("iH10").src="media/happy.svg";
     x += 1;
-    if(x>7){
+    if(x=>7){
         document.getElementById("10").style.display="none";
         document.getElementById("dceW").style.display="block";
         document.getElementById("spanContW").innerHTML = x;
@@ -139,7 +139,7 @@ function correct10(){
 }
 function incorrect10(){
     document.getElementById("iH10").src="media/sad.svg";
-    if(x>7){
+    if(x=>7){
         document.getElementById("10").style.display="none";
         document.getElementById("dceW").style.display="block";
         document.getElementById("spanContW").innerHTML = x;
