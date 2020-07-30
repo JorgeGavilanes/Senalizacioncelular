@@ -12,13 +12,14 @@
     <link rel="stylesheet" href="css/estilos.css">
     </head>
     <body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
+        <bgsound src="integrantes.mp3"></bgsound>
         <div class="contenedor">
             <div id="btnPlay" class="cajaprincipal">
                 <div class="subject">
                 <h1>Señalización y comunicación celular</h1>
                     <h3>HISTOLOGÍA I "A"</h3>
-                    <div class="noAlign"><p>El objetivo de este juego es llevar a tu célula a ser feliz respondiendo correctamente las preguntas, si fallas le dará una apoptosis :( tendrás que responder 10 preguntas correctamente, si fallas más de 3 veces habrás perdido y tu célula se enfadará contigo.</p></div>
-                    <button  id="botonPlay" onclick="btnPlay()">JUGAR</button>
+                    <div class="noAlign"><p>El objetivo de este juego es llevar a tu célula a ser feliz respondiendo correctamente las preguntas, si fallas le dará una necrosis :( tendrás que responder 10 preguntas correctamente, si fallas más de 3 veces habrás perdido y tu célula se enfadará contigo.</p></div>
+                    <button  id="botonPlay" onmousedown="inicio.play()" onclick="btnPlay()">JUGAR</button>
                 </div>
             <div class="joinCharacter">
                 <img src="media/happy.svg">
@@ -27,7 +28,7 @@
                 <p>Muy divertida y carismática, le gusta jugar, pero es muy competitiva, no juegues si vas a perder :)</p>
                 </div>
                 </div>
-                <div class="creditos"><a href="#modal">Integrantes</a></div>
+                <div class="creditos"><a href="#modal" onmousedown="integrantes.play()">Integrantes</a></div>
                 <div class="container-all" id="modal">
                     <div class="popup">
                         <div class="img"></div>
@@ -37,7 +38,7 @@
                             <p>Ashley Gavilanes<br>Damaris Loor<br>Lisbeth Paredes<br>Carmen Polo<br>Daniela Arcentales</p>
                             <p>©Tiwii 2020</p>
                         </div>
-                        <a href="#" class="btn-close-popup"><i class="fas fa-times"></i></a>
+                        <a href="#" class="btn-close-popup" onmousedown="integrantes.play()"><i class="fas fa-times"></i></a>
                     </div>
                 </div>
             </div>
@@ -54,9 +55,9 @@
                         <li>c. Neurotransmisores</li>
                     </ul>
                     <div class="botonAnswer">
-                    <button class="btnC" onclick='setTimeout("correct1()", 150)'>a</button>
-                        <button class="btnI" onclick='setTimeout("incorrect1()", 150)'>b</button>
-                        <button class="btnI" onclick='setTimeout("incorrect1()", 150)'>c</button>
+                    <button class="btnC" onmousedown="gana.play()" onclick='setTimeout("correct1()", 150)'>a</button>
+                        <button class="btnI" onmousedown="pierde.play()" onclick='setTimeout("incorrect1()", 150)'>b</button>
+                        <button class="btnI" onmousedown="pierde.play()" onclick='setTimeout("incorrect1()", 150)'>c</button>
                     </div>
                 </div>
             </div>
@@ -73,9 +74,9 @@
                         <li>c. Parácrina</li>
                     </ul>
                     <div class="botonAnswer">
-                    <button class="btnI" onclick='setTimeout("incorrect2()", 150)'>a</button>
-                        <button class="btnI" onclick='setTimeout("incorrect2()", 150)'>b</button>
-                        <button class="btnC" onclick='setTimeout("correct2()", 150)'>c</button>
+                    <button class="btnI" onmousedown="pierde.play()" onclick='setTimeout("incorrect2()", 150)'>a</button>
+                        <button class="btnI" onmousedown="pierde.play()" onclick='setTimeout("incorrect2()", 150)'>b</button>
+                        <button class="btnC" onmousedown="gana.play()" onclick='setTimeout("correct2()", 150)'>c</button>
                     </div>
                 </div>
             </div>
@@ -92,9 +93,9 @@
                         <li>c. Mecanismo de enzimas activadoras</li>
                     </ul>
                     <div class="botonAnswer">
-                    <button class="btnI" onclick='setTimeout("incorrect3()", 150)'>a</button>
-                        <button class="btnC" onclick="correct3()">b</button>
-                        <button class="btnI" onclick='setTimeout("incorrect3()", 150)'>c</button>
+                    <button class="btnI" onmousedown="pierde.play()" onclick='setTimeout("incorrect3()", 150)'>a</button>
+                        <button class="btnC" onmousedown="gana.play()" onclick="correct3()">b</button>
+                        <button class="btnI" onmousedown="pierde.play()" onclick='setTimeout("incorrect3()", 150)'>c</button>
                     </div>
                 </div>
             </div>
@@ -111,9 +112,9 @@
                         <li>c. Núcleo y aparato de Golgi</li>
                     </ul>
                     <div class="botonAnswer">
-                    <button class="btnC" onclick="correct4()">a</button>
-                        <button class="btnI" onclick="incorrect4()">b</button>
-                        <button class="btnI" onclick="incorrect4()">c</button>
+                    <button class="btnC" onmousedown="gana.play()" onclick="correct4()">a</button>
+                        <button class="btnI" onmousedown="pierde.play()" onclick="incorrect4()">b</button>
+                        <button class="btnI" onmousedown="pierde.play()" onclick="incorrect4()">c</button>
                     </div>
                 </div>
             </div>
@@ -130,9 +131,9 @@
                         <li>c. Sistema nervioso y endócrino</li>
                     </ul>
                     <div class="botonAnswer">
-                    <button class="btnI" onclick="incorrect5()">a</button>
-                        <button class="btnI" onclick="incorrect5()">b</button>
-                        <button class="btnC" onclick="correct5()">c</button>
+                    <button class="btnI" onmousedown="pierde.play()" onclick="incorrect5()">a</button>
+                        <button class="btnI" onmousedown="pierde.play()" onclick="incorrect5()">b</button>
+                        <button class="btnC" onmousedown="gana.play()" onclick="correct5()">c</button>
                     </div>
                 </div>
             </div>
@@ -149,9 +150,9 @@
                         <li>c. Toxinas</li>
                     </ul>
                     <div class="botonAnswer">
-                    <button class="btnC" onclick="correct6()">a</button>
-                        <button class="btnI" onclick="incorrect6()">b</button>
-                        <button class="btnI" onclick="incorrect6()">c</button>
+                    <button class="btnC" onmousedown="gana.play()" onclick="correct6()">a</button>
+                        <button class="btnI" onmousedown="pierde.play()" onclick="incorrect6()">b</button>
+                        <button class="btnI" onmousedown="pierde.play()" onclick="incorrect6()">c</button>
                     </div>
                 </div>
             </div>
@@ -168,9 +169,9 @@
                         <li>c. Endócrina</li>
                     </ul>
                     <div class="botonAnswer">
-                    <button class="btnI" onclick="incorrect7()">a</button>
-                        <button class="btnI" onclick="incorrect7()">b</button>
-                        <button class="btnC" onclick="correct7()">c</button>
+                    <button class="btnI" onmousedown="pierde.play()" onclick="incorrect7()">a</button>
+                        <button class="btnI" onmousedown="pierde.play()" onclick="incorrect7()">b</button>
+                        <button class="btnC" onmousedown="gana.play()" onclick="correct7()">c</button>
                     </div>
                 </div>
             </div>
@@ -187,9 +188,9 @@
                         <li>c. Reconocimiento y transducción de un estímulo</li>
                     </ul>
                     <div class="botonAnswer">
-                    <button class="btnI" onclick="incorrect8()">a</button>
-                        <button class="btnI" onclick="incorrect8()">b</button>
-                        <button class="btnC" onclick="correct8()">c</button>
+                    <button class="btnI" onmousedown="pierde.play()" onclick="incorrect8()">a</button>
+                        <button class="btnI" onmousedown="pierde.play()" onclick="incorrect8()">b</button>
+                        <button class="btnC" onmousedown="gana.play()" onclick="correct8()">c</button>
                     </div>
                 </div>
             </div>
@@ -206,9 +207,9 @@
                         <li>c. Tipo de comunicación que realizan las células</li>
                     </ul>
                     <div class="botonAnswer">
-                    <button class="btnC" onclick="correct9()">a</button>
-                        <button class="btnI" onclick="incorrect9()">b</button>
-                        <button class="btnI" onclick="incorrect9()">c</button>
+                    <button class="btnC" onmousedown="gana.play()" onclick="correct9()">a</button>
+                        <button class="btnI" onmousedown="pierde.play()" onclick="incorrect9()">b</button>
+                        <button class="btnI" onmousedown="pierde.play()" onclick="incorrect9()">c</button>
                     </div>
                 </div>
             </div>
@@ -225,9 +226,9 @@
                         <li>c. Señalización por linfocitos alfa</li>
                     </ul>
                     <div class="botonAnswer">
-                    <button class="btnI" onclick="incorrect10()">a</button>
-                        <button class="btnC" onclick="correct10()">b</button>
-                        <button class="btnI" onclick="incorrect10()">c</button>
+                    <button class="btnI" onmousedown="pierde.play()" onclick="incorrect10()">a</button>
+                        <button class="btnC" onmousedown="gana.play()" onclick="correct10()">b</button>
+                        <button class="btnI" onmousedown="pierde.play()" onclick="incorrect10()">c</button>
                     </div>
                 </div>
             </div>
@@ -235,11 +236,13 @@
             <h1>Felicidades, han ganado!!</h1>
                 <img src="media/win.svg">
                 <p>Obtuvieron una calificación final de <span id="spanContW"></span></p>
+                <a onmousedown="integrantes.play()" class="btnReintentar" href="https://senalizacioncelular.ga">Volver a jugar</a>
             </div>
             <div class="endLoser" id="dceL">
             <h1>Estudia, por tu culpa perdieron</h1>
                 <img src="media/dead.svg">
-                <p>F, Tiwii ha sufrido una terrible apoptosis :(</p>
+                <p>F, Tiwii ha sufrido una terrible necrosis :(</p>
+                <a onmousedown="integrantes.play()" class="btnReintentar" href="https://senalizacioncelular.ga">Volver a jugar</a>
             </div>
         </div>
         <div class="movil">

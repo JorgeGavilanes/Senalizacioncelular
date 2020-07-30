@@ -1,4 +1,12 @@
 var x = 0;
+var inicio = new Audio();
+var integrantes = new Audio();
+var gana = new Audio();
+var pierde = new Audio();
+inicio.src="inicio.mp3";
+integrantes.src="integrantes.mp3";
+gana.src="gana.mp3";
+pierde.src="pierde.mp3";
 function btnPlay(){
     document.getElementById("btnPlay").style.display="none";
     return document.getElementById("1").style.display="flex";

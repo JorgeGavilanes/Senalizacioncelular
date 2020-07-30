@@ -202,7 +202,7 @@ VENTANA QUIZ
     width: 100%;
     margin: 15px;
 }
-.botonAnswer button{
+.botonAnswer button, .btnReintentar{
     color: #fff;
     background-color: #17202A;
     padding: 10px 50px;
@@ -216,7 +216,7 @@ VENTANA QUIZ
     outline: none;
     cursor: pointer;
 }
-.botonAnswer button:hover{
+.botonAnswer button:hover, .btnReintentar:hover{
     -webkit-box-shadow: 0px 0px 15px 1px rgba(23,32,42,1);
     -moz-box-shadow: 0px 0px 15px 1px rgba(23,32,42,1);
     box-shadow: 0px 0px 15px 1px rgba(23,32,42,1);
@@ -270,6 +270,14 @@ VENTANA LOSER
 .endLoser img{
     width: 250px;
     margin: 50px auto;
+}
+/*---------------
+-----------------
+btnReintentar
+-----------------
+---------------*/
+.btnReintentar{
+    margin-top: 50px;
 }
 /*---------------
 -----------------
