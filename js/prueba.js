@@ -134,6 +134,7 @@ function correct10(){
     }
     if(x<7){
         document.getElementById("10").style.display="none";
+        document.getElementById("dceW").style.display="none";
         document.getElementById("dceL").style.display="block";
     }
 }
@@ -146,6 +147,7 @@ function incorrect10(){
     }
     if(x<7){
         document.getElementById("10").style.display="none";
+        document.getElementById("dceW").style.display="none";
         document.getElementById("dceL").style.display="block";
     }
 }
