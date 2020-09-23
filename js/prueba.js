@@ -3,27 +3,30 @@ inicio.src="inicio.mp3";
 integrantes.src="integrantes.mp3";
 gana.src="gana.mp3";
 pierde.src="pierde.mp3";
+
+let n = 1, cont = 0;
 function btnPlay(){
     document.getElementById("btnPlay").style.display="none";
-    return document.getElementById(1).style.display="flex";
+    moreThanTen();
 }
-let n = 1, cont = 0;
 function correct() {
     cont += 1;
     document.getElementById("iH-img"+n).src="media/happy.svg";
-    document.getElementById(n).style.display="none";
-    n += 1;
+    hideAndAdd();
     moreThanTen();
     showHappy();
     winnerOrLoser();
 }
 function incorrect() {
     document.getElementById("iH-img"+n).src="media/sad.svg";
-    document.getElementById(n).style.display="none";
-    n += 1;
+    hideAndAdd();
     moreThanTen();
     showSad();
     winnerOrLoser();
+}
+function hideAndAdd(){
+    document.getElementById(n).style.display="none";
+    n += 1;
 }
 function moreThanTen(){
     if(n <= 10){
